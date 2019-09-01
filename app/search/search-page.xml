@@ -1,0 +1,16 @@
+<Page loaded="pageLoaded" class="page" xmlns:lv="nativescript-ui-listview">
+    <ActionBar title="Search" class="action-bar"></ActionBar>
+<StackLayout orientation="vertical" height="100%" backgroundColor="lightgray">
+        <SearchBar hint="Locations, Countries and many more..." text="{{ searchPhrase }}" submit="{{ onSearchSubmit }}" />
+        <Button text="Clear History" tap="{{ removeItemFromList }}" fontSize="15em" style="color: red; background-color: white; text-align: right; padding: 10% 20%; padding-bottom: -2%"/>
+        <ListView class="list-group" items="{{ searchQueries }}"
+            style="height:100%" separatorColor="white" itemTap="{{ onItemTap }}">
+            <ListView.itemTemplate>
+                <FlexboxLayout flexDirection="row" class="list-group-item">
+                    <Label text="{{ query }}" class="list-group-item-heading"
+                        verticalAlignment="center" style="padding-right: 50%; width: 80%; padding-top: 10%" />
+                </FlexboxLayout>
+            </ListView.itemTemplate>
+        </ListView>
+    </StackLayout>
+</Page>

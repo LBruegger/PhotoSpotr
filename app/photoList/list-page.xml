@@ -1,0 +1,20 @@
+<Page navigatedTo="pageLoaded" class="page">
+<ActionBar title="{{ title }}" class="action-bar"></ActionBar>
+        <GridLayout rows="*" xmlns:lv="nativescript-ui-listview" xmlns:f="nativescript-fresco"
+            height="100%">   
+            <ListView items="{{ locations }}" id="ListView" itemTap="{{ onItemTap }}" style="height:100%" separatorColor="transparent">
+                <ListView.itemTemplate>
+                    <FlexboxLayout flexDirection="row" id="listItem" rows="*"
+                        columns="*" backgroundImage="{{ imageSrc }}" id="image" border="10px" style="background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;"> 
+                        <StackLayout paddingTop="8" paddingBottom="8"
+                            verticalAlignment="bottom" paddingLeft="16"
+                            paddingRight="16" height="200">
+                            <Label text="{{ city }}" class="locationCountry" />
+                        </StackLayout>
+                    </FlexboxLayout>
+                </ListView.itemTemplate>
+            </ListView>
+        </GridLayout>
+</Page>

@@ -1,0 +1,13 @@
+<Page loaded="pageLoaded" class="page">
+    <ActionBar title="Categories" class="action-bar"></ActionBar>
+        <StackLayout>
+            <ListView style="height:5000px" class="list-group" items="{{ searchQueries }}" itemTap="{{ onItemTap }}">
+                <ListView.itemTemplate>
+                    <FlexboxLayout flexDirection="row" class="list-group-item">
+                        <Label text="{{ category }}" class="list-group-item-heading"
+                        verticalAlignment="center" style="width: 60%" />
+                    </FlexboxLayout>
+                </ListView.itemTemplate>
+            </ListView>
+        </StackLayout>
+</Page>

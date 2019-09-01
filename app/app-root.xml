@@ -1,0 +1,11 @@
+<TabView iosIconRenderingMode="alwaysOriginal">
+    <TabViewItem title="Featured" iconSource="res://star.png">
+        <Frame id="asdfasdf" defaultPage="home/home-page"></Frame>
+    </TabViewItem>
+    <TabViewItem title="Search" iconSource="res://search.png">
+        <Frame id="search" defaultPage="search/search-page"></Frame>
+    </TabViewItem>
+    <TabViewItem title="Categories" iconSource="res://list.png">
+        <Frame id="search" defaultPage="categories/categories-page"></Frame>
+    </TabViewItem>
+</TabView>

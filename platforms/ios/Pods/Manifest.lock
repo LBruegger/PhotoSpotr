@@ -1,0 +1,52 @@
+PODS:
+  - FLAnimatedImage (1.0.12)
+  - MaterialComponents/AnimationTiming (84.6.0)
+  - MaterialComponents/Ink (84.6.0):
+    - MaterialComponents/private/Math
+  - MaterialComponents/Palettes (84.6.0)
+  - MaterialComponents/private/Application (84.6.0)
+  - MaterialComponents/private/Math (84.6.0)
+  - MaterialComponents/ShadowElevations (84.6.0)
+  - MaterialComponents/ShadowLayer (84.6.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/Tabs (84.6.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Ink
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/Typography (84.6.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+  - MDFInternationalization (2.0.0)
+  - NYTPhotoViewer (2.0.0):
+    - NYTPhotoViewer/AnimatedGifSupport (= 2.0.0)
+    - NYTPhotoViewer/Core (= 2.0.0)
+  - NYTPhotoViewer/AnimatedGifSupport (2.0.0):
+    - FLAnimatedImage (~> 1.0.12)
+    - NYTPhotoViewer/Core
+  - NYTPhotoViewer/Core (2.0.0)
+
+DEPENDENCIES:
+  - MaterialComponents/Tabs (~> 84.4)
+  - NYTPhotoViewer (~> 2.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FLAnimatedImage
+    - MaterialComponents
+    - MDFInternationalization
+    - NYTPhotoViewer
+
+SPEC CHECKSUMS:
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  MaterialComponents: 71139af6ca6875fbde8ab8e64a275b7fd6a22d7f
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  NYTPhotoViewer: 34b8bd6bcc297466adec1668f9a01249d73c90e6
+
+PODFILE CHECKSUM: d4360aa9a6dbb37763c2ed7a1084dfed554bc44d
+
+COCOAPODS: 1.7.5

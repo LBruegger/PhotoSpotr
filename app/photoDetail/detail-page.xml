@@ -1,0 +1,24 @@
+<Page loaded="pageLoaded" class="page">
+    <ActionBar title="Detail" class="action-bar">
+        <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" tap="onNavBtnTap"/>
+    </ActionBar>
+    <StackLayout orientation="vertical" backgroundColor="Black">
+        <Image src="{{ imgResource }}"
+            height="40%" style="margin-bottom: 30px; margin-top: 30px;" tap="openGallery"/>
+            <Label text="Image from Pixabay.com"  backgroundColor="Black" style="color: white; width: 100%; text-align: center;" margin="5" fontSize="12"/>
+            <StackLayout orientation="horizontal" backgroundColor="white">
+			    <Button text="&#xf35d; Visit" class="fas" tap="openInBrowser" style="text-align: center; width: 47%; border-radius: 80;" backgroundColor="Black" height="40" margin="5"/>
+                <Button text="&#xf03e; Preview" class="fas" tap="openGallery" style="text-align: center; width: 47%; border-radius: 80;" backgroundColor="Black" height="40" margin="5"/>
+            </StackLayout>
+        <ListView class="list-group" items="{{allData}}" height="50%">
+            <ListView.itemTemplate>
+                <FlexboxLayout flexDirection="row" class="list-group-item">
+                    <Label text="{{name}}" class="list-group-item-heading"
+                        verticalAlignment="center" style="width: 30%" />
+                    <Label text="{{ value }}" class="list-group-item-heading"
+                        verticalAlignment="center" />
+                </FlexboxLayout>
+            </ListView.itemTemplate>
+        </ListView>
+    </StackLayout>
+</Page>
